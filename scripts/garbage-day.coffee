@@ -8,12 +8,12 @@
 module.exports = (robot) ->
   days = [
     ["日", "ごみ収集お休み"]
-    ["月", "ゴミ収集お休み"]
-    ["火", "一般ごみの日"]
-    ["水", "プラスチックの日"]
-    ["木", "一般ごみの日"]
-    ["金", "資源ごみの日"]
-    ["土", "一般ごみの日"]
+    ["月", "プラスチック"]
+    ["火", "一般ごみ"]
+    ["水", "資源ごみ"]
+    ["木", "一般ごみ"]
+    ["金", "ごみ収集お休み"]
+    ["土", "一般ごみ"]
   ]
 
   robot.hear /garbage( tommorow)?/i, (msg) ->
@@ -24,4 +24,4 @@ module.exports = (robot) ->
     if dayOfTheWeek > 6
       dayOfTheWeek = 0
 
-    msg.send days[dayOfTheWeek][0] + "曜日は" + days[dayOfTheWeek][1] + "だねぇ"
+    msg.send days[dayOfTheWeek][0] + "曜日は" + days[dayOfTheWeek][1] + "の日だねぇ"
