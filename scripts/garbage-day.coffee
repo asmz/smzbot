@@ -16,7 +16,7 @@ module.exports = (robot) ->
     ["土", "一般ごみ"]
   ]
 
-  robot.hear /garbage( tommorow)?/i, (msg) ->
+  robot.hear /garbage( tomorrow)?/i, (msg) ->
     addDays = if msg.match[1] then 1 else 0
 
     date = new Date
