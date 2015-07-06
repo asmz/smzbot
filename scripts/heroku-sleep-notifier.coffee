@@ -1,5 +1,7 @@
-# heroku sleep notifier
-# refs:http://shokai.org/blog/archives/10108
+# Description:
+#   heroku sleep notifier
+#   refs:http://shokai.org/blog/archives/10108
+
 module.exports = (robot) ->
 
   ## 起きた時、slack-adapterがつながるのを待って通知
