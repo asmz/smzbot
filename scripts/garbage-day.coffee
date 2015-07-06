@@ -3,7 +3,7 @@
 #
 # Commands:
 #   hubot garbage - Return what garbage day today
-#   hubot garbage tommorow - Return what garbage day tommorow
+#   hubot garbage tomorrow - Return what garbage day tomorrow
 
 module.exports = (robot) ->
   days = [
