@@ -9,7 +9,7 @@ module.exports = (robot) ->
   job = new cronJob
     cronTime: "0 0 10 25 * *"
     onTick: ->
-      robot.send {room: "#x-test"}, postMsg
+      robot.send {room: "#general"}, postMsg
       return
     start: true
     timeZone: "Asia/Tokyo"
