@@ -4,10 +4,10 @@
 cronJob = require('cron').CronJob
 
 module.exports = (robot) ->
-  postMsg = "今日は給料日だから、パパにお小遣いあげよう！"
+  postMsg = "明日は給料日だから、パパにお小遣いあげよう！"
 
   job = new cronJob
-    cronTime: "0 0 10 25 * *"
+    cronTime: "0 0 18 24 * *"
     onTick: ->
       robot.send {room: "#general"}, postMsg
       return
