@@ -7,7 +7,7 @@ module.exports = (robot) ->
   postMsg = "明日は給料日だから、パパにお小遣いあげよう！"
 
   job = new cronJob
-    cronTime: "0 0 18 24 * *"
+    cronTime: "0 0 18 09 * *"
     onTick: ->
       robot.send {room: "#general"}, postMsg
       return
